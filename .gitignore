@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/Prototypes/.vs
+/src/Prototypes/Prototypes/obj/Debug
+/src/Prototypes/packages
+/src/Prototypes/GetFilesWebApi/bin
+/src/Prototypes/GetFilesWebApi/obj/Debug
+/src/Prototypes/GetFileWebApi/bin
+/src/Prototypes/GetFileWebApi/obj/Debug
