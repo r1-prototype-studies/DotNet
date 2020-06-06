@@ -13,9 +13,9 @@ namespace GetFileWebApi.Controllers
     public class FileController : ApiController
     {
         private string _sampleDoc = @"..\..\..\data\sampleDoc.doc";
-        private string _sampleExcel = @"..\..\..\data\sampleDoc.doc";
-        private string _samplePdf = @"..\..\..\data\sampleDoc.doc";
-        private string _sampleZip = @"..\..\..\data\sampleDoc.doc";
+        private string _sampleExcel = @"..\..\..\data\sampleExcel.xlsx";
+        private string _samplePdf = @"..\..\..\data\samplePDF.pdf";
+        private string _sampleZip = @"..\..\..\data\sampleZip.zip";
 
         [HttpGet]
         [Route("Ebook/{format}")]
@@ -25,7 +25,7 @@ namespace GetFileWebApi.Controllers
 
             var filebytes = File.ReadAllBytes(fileName);
             var data = new MemoryStream(filebytes);
-            return new EbookResult("testing", data, Request);
+            return new EbookResult(fileName.Split('\\').Last(), data, Request);
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace GetFileWebApi.Controllers
                     break;
             }
 
-            var fileName = Path.GetFullPath(Path.Combine(dllPath, _sampleDoc));
+            var fileName = Path.GetFullPath(Path.Combine(dllPath, textFile));
             return fileName;
         }
 
@@ -78,7 +78,7 @@ namespace GetFileWebApi.Controllers
                 var response = _request.CreateResponse(HttpStatusCode.OK);
                 response.Content = new StreamContent(_bookData);
                 response.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment");
-                response.Content.Headers.ContentDisposition.FileName = _fileName.Split('\\').Last();
+                response.Content.Headers.ContentDisposition.FileName = _fileName;
                 response.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
                 return System.Threading.Tasks.Task.FromResult(response);
             }
