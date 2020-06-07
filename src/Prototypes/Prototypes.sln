@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetFileWebApi", "GetFileWebApi\GetFileWebApi.csproj", "{D170A1ED-2B73-4CB2-8CA4-364F0F7F3441}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHostWebApi", "SelfHostWebApi\SelfHostWebApi.csproj", "{A36F77F9-EE16-4A63-8460-C1D9B580DAFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvokeWebApiConsole", "InvokeWebApiConsole\InvokeWebApiConsole.csproj", "{F53F9834-04F9-48CA-B178-B0FC011250EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D170A1ED-2B73-4CB2-8CA4-364F0F7F3441}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D170A1ED-2B73-4CB2-8CA4-364F0F7F3441}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D170A1ED-2B73-4CB2-8CA4-364F0F7F3441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A36F77F9-EE16-4A63-8460-C1D9B580DAFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A36F77F9-EE16-4A63-8460-C1D9B580DAFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A36F77F9-EE16-4A63-8460-C1D9B580DAFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A36F77F9-EE16-4A63-8460-C1D9B580DAFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F53F9834-04F9-48CA-B178-B0FC011250EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F53F9834-04F9-48CA-B178-B0FC011250EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F53F9834-04F9-48CA-B178-B0FC011250EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F53F9834-04F9-48CA-B178-B0FC011250EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
