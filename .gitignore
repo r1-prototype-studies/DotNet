@@ -13,3 +13,14 @@
 /src/Prototypes/InvokeWebApiConsole/obj/Debug
 /src/Prototypes/SelfHostWebApi/bin/Debug
 /src/Prototypes/SelfHostWebApi/obj/Debug
+/src/Prototypes_MVC/Prototypes_MVC/.vs/Prototypes_MVC
+/src/Prototypes_MVC/Prototypes_MVC/packages
+/src/Prototypes_MVC/Prototypes_MVC/ProgressBarImplementation/bin
+/src/Prototypes_MVC/Prototypes_MVC/ProgressBarImplementation/obj/Debug
+/src/Prototypes_WebApi/GetFileWebApi/bin
+/src/Prototypes_WebApi/GetFileWebApi/obj/Debug
+/src/Prototypes_WebApi/InvokeWebApiConsole/bin/Debug
+/src/Prototypes_WebApi/InvokeWebApiConsole/obj/Debug
+/src/Prototypes_WebApi/packages
+/src/Prototypes_WebApi/SelfHostWebApi/bin/Debug
+/src/Prototypes_WebApi/SelfHostWebApi/obj/Debug
