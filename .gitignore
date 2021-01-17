@@ -24,3 +24,6 @@
 /src/Prototypes_WebApi/packages
 /src/Prototypes_WebApi/SelfHostWebApi/bin/Debug
 /src/Prototypes_WebApi/SelfHostWebApi/obj/Debug
+/src/Prototypes_MVC/Prototypes_MVC/Prototypes/obj/Debug/netcoreapp3.1
+/src/Prototypes_MVC/Prototypes_MVC/Prototypes/obj
+/src/Prototypes_MVC/Prototypes_MVC/Prototypes/bin/Debug/netcoreapp3.1
