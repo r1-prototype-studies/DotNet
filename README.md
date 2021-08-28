@@ -93,6 +93,9 @@ Hsoting a WebAPI project in a console application
     set
     get
     ```
+* Docker commands
+    ``` powerShell
+    docker exec -it shoppingcart-redis /bin/bash
 * 
 
 
@@ -182,6 +185,14 @@ Hsoting a WebAPI project in a console application
     docker run -d -p 6379:6379 --name shoppingcart-redis redis
 13. Install the nuget package - Microsoft.Extensions.Caching.StackExchange
 14. Install the nuget package - Newtonsoft.Json
+15. Create docker compose file 
+    * Right-click the project
+    * Go to Add > Add container Orchestrator support 
+      * Select Docker compose and click ok
+      * Select Target OS as Linux
+    * DockerFile will be created in the project
+    * Docker compose will be updated
+16. 
 
 
 ## Nuget packages
