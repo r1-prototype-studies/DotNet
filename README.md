@@ -78,6 +78,7 @@ Hsoting a WebAPI project in a console application
   [ProducesResponseType((int)HttpStatusCode.NotFound)]
   [ProducesResponseType(typeof(Product), (int)HttpStatusCode.OK)]
   ```
+* ``depends_on`` in docker file does not make sure that the dependant container is running properly. It just ensures that the dependant containers are started first.
 * 
 
 
