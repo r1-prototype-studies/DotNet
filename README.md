@@ -144,7 +144,14 @@ Hsoting a WebAPI project in a console application
         db.Products.find({}).pretty()
         ```
 7. Install MongoDB.Driver nuget package
-8. 
+8. Create docker compose file 
+    * Right-click the project
+    * Go to Add > Add container Orchestrator support 
+      * Select Docker compose and click ok
+      * Select Target OS as Linux
+    * DockerFile will be created in the project
+    * Docker compose will be created in the solution level
+    * 
 
 
 ## Nuget packages
@@ -154,3 +161,4 @@ Hsoting a WebAPI project in a console application
 ## References
 * https://github.com/aspnetrun
 * https://github.com/aspnetrun/run-aspnetcore-microservices
+* https://stackoverflow.com/questions/62441307/how-can-i-change-the-location-of-docker-images-when-using-docker-desktop-on-wsl2
