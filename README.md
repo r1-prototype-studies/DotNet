@@ -192,7 +192,11 @@ Hsoting a WebAPI project in a console application
       * Select Target OS as Linux
     * DockerFile will be created in the project
     * Docker compose will be updated
-16. 
+16. Execute the below command to run the docker container
+    ``` powerShell
+     docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d
+     ```
+17. 
 
 
 ## Nuget packages
