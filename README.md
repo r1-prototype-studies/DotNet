@@ -92,7 +92,8 @@ Hsoting a WebAPI project in a console application
     ping
     set
     get
-    
+    ```
+* 
 
 
 
@@ -179,11 +180,14 @@ Hsoting a WebAPI project in a console application
 12. Run Redis container using the following command:
     ``` powerShell
     docker run -d -p 6379:6379 --name shoppingcart-redis redis
-13. 
+13. Install the nuget package - Microsoft.Extensions.Caching.StackExchange
+14. Install the nuget package - Newtonsoft.Json
 
 
 ## Nuget packages
 1. MongoDB.Driver
+2. Microsoft.Extensions.Caching.StackExchange
+3. Newtonsoft.Json
 
 ## Docker images
 1. mongo
