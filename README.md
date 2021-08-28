@@ -15,6 +15,7 @@
   - [Notes](#notes-1)
   - [Steps](#steps)
   - [Nuget packages](#nuget-packages)
+  - [Docker images](#docker-images)
   - [References](#references-2)
 
 # Tips
@@ -82,7 +83,16 @@ Hsoting a WebAPI project in a console application
 * Use mongoclient docker image to view the mongo data in GUI
     ``` powerShell
     docker run -d -p 3000:3000 mongoclient/mongoclient
-* 
+* Redis &rarr; REmote DIctionary Server
+* The below command is used to connect to redis in the bash
+    ``` powerShell
+    redis-cli
+* Command Redis command
+    ``` powerShell
+    ping
+    set
+    get
+    
 
 
 
@@ -163,12 +173,22 @@ Hsoting a WebAPI project in a console application
     ``` powerShell
     docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml down
     ```
-11. 
+11. Execute the below command to pull Redis
+    ``` powerShell
+    docker pull redis
+12. Run Redis container using the following command:
+    ``` powerShell
+    docker run -d -p 6379:6379 --name shoppingcart-redis redis
+13. 
 
 
 ## Nuget packages
 1. MongoDB.Driver
 
+## Docker images
+1. mongo
+2. mongoclient
+3. redis
 
 ## References
 * https://github.com/aspnetrun
