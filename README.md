@@ -73,7 +73,13 @@ Hsoting a WebAPI project in a console application
   * Infrastructure Layer
     * Provides infrastructure plumbing
     * Primary responsibility is persistence of business state
+* ProducesResponseType &rarr; used as an attribute which is used in documentation like swagger providing information like response http status code and the return object.
+  ``` CSharp
+  [ProducesResponseType((int)HttpStatusCode.NotFound)]
+  [ProducesResponseType(typeof(Product), (int)HttpStatusCode.OK)]
+  ```
 * 
+
 
 
 ## Steps
