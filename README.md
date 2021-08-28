@@ -79,6 +79,9 @@ Hsoting a WebAPI project in a console application
   [ProducesResponseType(typeof(Product), (int)HttpStatusCode.OK)]
   ```
 * ``depends_on`` in docker file does not make sure that the dependant container is running properly. It just ensures that the dependant containers are started first.
+* Use mongoclient docker image to view the mongo data in GUI
+    ``` powerShell
+    docker run -d -p 3000:3000 mongoclient/mongoclient
 * 
 
 
@@ -108,7 +111,7 @@ Hsoting a WebAPI project in a console application
       ``` powerShell
       docker pull mongo
     * Run the below command to run the docker image
-      ``` powerShell
+9      ``` powerShell
       docker run -d -p 27017:27017 --name shopping-mongo mongo
       ```
       -d &rarr; runs the docker image in detached mode
@@ -152,7 +155,15 @@ Hsoting a WebAPI project in a console application
       * Select Target OS as Linux
     * DockerFile will be created in the project
     * Docker compose will be created in the solution level
-    * 
+9. Execute the below command to run the docker container
+    ``` powerShell
+     docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d
+     ```
+10. Execute the below command to stop the docker container.
+    ``` powerShell
+    docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml down
+    ```
+11. 
 
 
 ## Nuget packages
@@ -163,3 +174,4 @@ Hsoting a WebAPI project in a console application
 * https://github.com/aspnetrun
 * https://github.com/aspnetrun/run-aspnetcore-microservices
 * https://stackoverflow.com/questions/62441307/how-can-i-change-the-location-of-docker-images-when-using-docker-desktop-on-wsl2
+* https://newbedev.com/how-can-i-change-the-location-of-docker-images-when-using-docker-desktop-on-wsl2-with-windows-10-home
