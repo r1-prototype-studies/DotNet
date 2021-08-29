@@ -98,6 +98,8 @@ Hsoting a WebAPI project in a console application
     docker exec -it shoppingcart-redis /bin/bash
 * Portainer is a container management tool.
   * credentials: admin/password
+* pgadmin is used for postgresql administration.
+  * credentials: admin@admin.com/password
 * 
 
 
@@ -216,7 +218,10 @@ Hsoting a WebAPI project in a console application
 21. Execute the below command to pull postgresql
     ``` powerShell
     docker pull postgres
-22. 
+22. Execute the below command to pull pgadmin
+    ``` powerShell 
+    docker pull dpage/pgadmin4
+23. 
 
 
 ## Nuget packages
@@ -230,6 +235,7 @@ Hsoting a WebAPI project in a console application
 3. redis
 4. portainer/portainer-ce
 5. postgres
+6. dpage/pgadmin4
 
 ## References
 * https://github.com/aspnetrun
@@ -237,3 +243,4 @@ Hsoting a WebAPI project in a console application
 * https://stackoverflow.com/questions/62441307/how-can-i-change-the-location-of-docker-images-when-using-docker-desktop-on-wsl2
 * https://newbedev.com/how-can-i-change-the-location-of-docker-images-when-using-docker-desktop-on-wsl2-with-windows-10-home
 * https://documentation.portainer.io/quickstart/
+* https://www.pgadmin.org/
