@@ -97,7 +97,7 @@ Hsoting a WebAPI project in a console application
     ``` powerShell
     docker exec -it shoppingcart-redis /bin/bash
 * Portainer is a container management tool.
-  * credentials admin/password
+  * credentials: admin/password
 * 
 
 
@@ -128,7 +128,7 @@ Hsoting a WebAPI project in a console application
       ``` powerShell
       docker pull mongo
     * Run the below command to run the docker image
-9      ``` powerShell
+      ``` powerShell
       docker run -d -p 27017:27017 --name shopping-mongo mongo
       ```
       -d &rarr; runs the docker image in detached mode
@@ -180,26 +180,43 @@ Hsoting a WebAPI project in a console application
     ``` powerShell
     docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml down
     ```
-11. Execute the below command to pull Redis
+11. Create a new project Basket.API with the template ASP.NET Core Web API.
+12. Change the running port and url
+     * Right-click on the project and go to properties.
+     * Go to Debug tab.
+     * Select Basket.API from the profile.
+     * Check the app url at the bottom.
+     * The new profile gets added in the launchsettings.json in properties folder.
+13. Execute the below command to pull Redis
     ``` powerShell
     docker pull redis
-12. Run Redis container using the following command:
-    ``` powerShell
-    docker run -d -p 6379:6379 --name shoppingcart-redis redis
-13. Install the nuget package - Microsoft.Extensions.Caching.StackExchange
-14. Install the nuget package - Newtonsoft.Json
-15. Create docker compose file 
-    * Right-click the project
-    * Go to Add > Add container Orchestrator support 
-      * Select Docker compose and click ok
-      * Select Target OS as Linux
-    * DockerFile will be created in the project
-    * Docker compose will be updated
-16. Execute the below command to run the docker container
+14.  Run Redis container using the following command:
+      ``` powerShell
+      docker run -d -p 6379:6379 --name shoppingcart-redis redis
+15.  Install the nuget package - Microsoft.Extensions.Caching.StackExchange
+16.  Install the nuget package - Newtonsoft.Json
+17.  Create docker compose file 
+     * Right-click the project
+     * Go to Add > Add container Orchestrator support 
+       * Select Docker compose and click ok
+       * Select Target OS as Linux
+     * DockerFile will be created in the project
+     * Docker compose will be updated
+18. Execute the below command to run the docker container
     ``` powerShell
      docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d
      ```
-17. 
+19. Create a new project Discount.API with the template ASP.NET Core Web API.
+20. Change the running port and url
+    * Right-click on the project and go to properties.
+    * Go to Debug tab.
+    * Select Discount.API from the profile.
+    * Check the app url at the bottom.
+    * The new profile gets added in the launchsettings.json in properties folder. 
+21. Execute the below command to pull postgresql
+    ``` powerShell
+    docker pull postgres
+22. 
 
 
 ## Nuget packages
@@ -212,7 +229,7 @@ Hsoting a WebAPI project in a console application
 2. mongoclient
 3. redis
 4. portainer/portainer-ce
-5. 
+5. postgres
 
 ## References
 * https://github.com/aspnetrun
