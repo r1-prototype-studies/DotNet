@@ -96,7 +96,10 @@ Hsoting a WebAPI project in a console application
 * Docker commands
     ``` powerShell
     docker exec -it shoppingcart-redis /bin/bash
+* Portainer is a container management tool.
+  * credentials admin/password
 * 
+
 
 
 
@@ -208,9 +211,12 @@ Hsoting a WebAPI project in a console application
 1. mongo
 2. mongoclient
 3. redis
+4. portainer/portainer-ce
+5. 
 
 ## References
 * https://github.com/aspnetrun
 * https://github.com/aspnetrun/run-aspnetcore-microservices
 * https://stackoverflow.com/questions/62441307/how-can-i-change-the-location-of-docker-images-when-using-docker-desktop-on-wsl2
 * https://newbedev.com/how-can-i-change-the-location-of-docker-images-when-using-docker-desktop-on-wsl2-with-windows-10-home
+* https://documentation.portainer.io/quickstart/
