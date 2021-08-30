@@ -235,7 +235,17 @@ Hsoting a WebAPI project in a console application
     INSERT INTO Coupon (ProductName, description, amount) VALUES ('Samsung 10', 'Samsung Discount', 100);
 24. Install the nuget package - Dapper
 25. Install the nuget package - Npgsql
-26. 
+26. Create docker compose file 
+     * Right-click the project
+     * Go to Add > Add container Orchestrator support 
+       * Select Docker compose and click ok
+       * Select Target OS as Linux
+     * DockerFile will be created in the project
+     * Docker compose will be updated
+27. Execute the below command to run the docker container
+    ``` powerShell
+     docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d
+     ```
 
 
 ## Nuget packages
