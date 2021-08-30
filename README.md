@@ -221,13 +221,29 @@ Hsoting a WebAPI project in a console application
 22. Execute the below command to pull pgadmin
     ``` powerShell 
     docker pull dpage/pgadmin4
-23. 
+23. Create coupon table in postgresql database using pgadmin
+    ``` sql
+    CREATE TABLE Coupon(
+      ID SERIAL PRIMARY KEY NOT NULL,
+      ProductName Varchar(24) NOT NULL,
+      Description TEXT,
+      Amount INT
+    );
+
+    INSERT INTO Coupon (ProductName, description, amount) VALUES ('IPhone X', 'IPhone Discount', 150);
+
+    INSERT INTO Coupon (ProductName, description, amount) VALUES ('Samsung 10', 'Samsung Discount', 100);
+24. Install the nuget package - Dapper
+25. Install the nuget package - Npgsql
+26. 
 
 
 ## Nuget packages
 1. MongoDB.Driver
 2. Microsoft.Extensions.Caching.StackExchange
 3. Newtonsoft.Json
+4. Dapper
+5. Npgsql
 
 ## Docker images
 1. mongo
