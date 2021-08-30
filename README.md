@@ -100,6 +100,8 @@ Hsoting a WebAPI project in a console application
   * credentials: admin/password
 * pgadmin is used for postgresql administration.
   * credentials: admin@admin.com/password
+* gRPC &rarr; Google Remote Procedure Call
+* gRPc uses HTTP/2 protocol and it is non-browser at the moment.
 * 
 
 
@@ -255,6 +257,17 @@ Hsoting a WebAPI project in a console application
     * The new profile gets added in the launchsettings.json in properties folder. 
 30. Install the nuget package - Dapper
 31. Install the nuget package - Npgsql
+32. Go to properties of the Discount.proto file
+    *  Change the build action to Protobuf compilers
+    *  Change gRPC stub classes to Server Only
+33. Open Discount.Grpc.csproj file
+    * Remove the below lines if present
+      ```xml      
+      <ItemGroup>
+        <None Remove="Protos\discount.proto" />
+      </ItemGroup>
+34. Build the project to generate the gRPC files in ~\Discount.Grpc\obj\Debug\net5.0\Protos\
+35. 
 
 
 ## Nuget packages
