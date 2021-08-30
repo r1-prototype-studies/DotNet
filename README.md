@@ -246,6 +246,15 @@ Hsoting a WebAPI project in a console application
     ``` powerShell
      docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d
      ```
+28. Create a new project Discount.Grpc with the template ASP.NET Core gRPC.
+29. Change the running port and url
+    * Right-click on the project and go to properties.
+    * Go to Debug tab.
+    * Select Discount.API from the profile.
+    * Check the app url at the bottom.
+    * The new profile gets added in the launchsettings.json in properties folder. 
+30. Install the nuget package - Dapper
+31. Install the nuget package - Npgsql
 
 
 ## Nuget packages
