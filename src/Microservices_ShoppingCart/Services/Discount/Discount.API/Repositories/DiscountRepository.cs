@@ -21,18 +21,18 @@ namespace Discount.API.Repositories
 
         public async Task<bool> CreateDiscount(Coupon coupon)
         {
-            var connection = new NpgsqlConnection(
+            using var connection = new NpgsqlConnection(
                                     _configuration.GetValue<string>("DatabaseSettings:ConnectionString"));
-
             var affected = await connection.ExecuteAsync
-                                        (@"INSERT INTO Coupon (ProductName, Description, Amount) VALUES 
-                                                               @ProductName, @Description, @Amount)",
-                                            new
-                                            {
-                                                ProductName = coupon.ProductName,
-                                                Description = coupon.Description,
-                                                Amount = coupon.Amount
-                                            });
+                             (@"INSERT INTO Coupon (ProductName, Description, Amount) VALUES 
+                                                                   (@ProductName, @Description, @Amount)",
+                                 new
+                                 {
+                                     ProductName = coupon.ProductName,
+                                     Description = coupon.Description,
+                                     Amount = coupon.Amount
+                                 });
+
 
             if (affected == 0)
             {
@@ -41,13 +41,14 @@ namespace Discount.API.Repositories
             return true;
         }
 
+
         public async Task<bool> DeleteDiscount(string productName)
         {
             var connection = new NpgsqlConnection(
                                     _configuration.GetValue<string>("DatabaseSettings:ConnectionString"));
 
             var affected = await connection.ExecuteAsync
-                                        (@"DELETE FROM Coupon WHERE ProductName = @ProductName)",
+                                        (@"DELETE FROM Coupon WHERE ProductName = @ProductName",
                                             new
                                             {
                                                 ProductName = productName
@@ -89,8 +90,8 @@ namespace Discount.API.Repositories
             var affected = await connection.ExecuteAsync
                                         (@"UPDATE Coupon SET ProductName = @ProductName, 
                                                              Description = @Description, 
-                                                             Amount = @Amount) 
-                                            WHERE Id = @Id)",
+                                                             Amount = @Amount 
+                                            WHERE Id = @Id",
                                             new
                                             {
                                                 ProductName = coupon.ProductName,
