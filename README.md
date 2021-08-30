@@ -267,7 +267,8 @@ Hsoting a WebAPI project in a console application
         <None Remove="Protos\discount.proto" />
       </ItemGroup>
 34. Build the project to generate the gRPC files in ~\Discount.Grpc\obj\Debug\net5.0\Protos\
-35. 
+35. Install the nuget package - AutoMapper.Extensions.Microsoft.DependencyInjection
+36. 
 
 
 ## Nuget packages
@@ -276,6 +277,7 @@ Hsoting a WebAPI project in a console application
 3. Newtonsoft.Json
 4. Dapper
 5. Npgsql
+6. AutoMapper.Extensions.Microsoft.DependencyInjection
 
 ## Docker images
 1. mongo
