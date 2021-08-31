@@ -274,7 +274,18 @@ Hsoting a WebAPI project in a console application
     * Add new service reference for gRPC 
     * Select the .proto file from discount grpc project
     * Select client
-37. 
+37. Create docker compose file 
+     * Right-click the project
+     * Go to Add > Add container Orchestrator support 
+       * Select Docker compose and click ok
+       * Select Target OS as Linux
+     * DockerFile will be created in the project
+     * Docker compose will be updated
+38. Execute the below command to run the docker container
+    ``` powerShell
+     docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d --build
+     ```
+39. 
 
 
 
