@@ -268,7 +268,14 @@ Hsoting a WebAPI project in a console application
       </ItemGroup>
 34. Build the project to generate the gRPC files in ~\Discount.Grpc\obj\Debug\net5.0\Protos\
 35. Install the nuget package - AutoMapper.Extensions.Microsoft.DependencyInjection
-36. 
+36. Add gRPC client in Basket API
+    * Right click on basket api project
+    * Go to Add > Connected Services
+    * Add new service reference for gRPC 
+    * Select the .proto file from discount grpc project
+    * Select client
+37. 
+
 
 
 ## Nuget packages
