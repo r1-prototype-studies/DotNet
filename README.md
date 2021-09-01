@@ -341,3 +341,6 @@ Hsoting a WebAPI project in a console application
 * https://newbedev.com/how-can-i-change-the-location-of-docker-images-when-using-docker-desktop-on-wsl2-with-windows-10-home
 * https://documentation.portainer.io/quickstart/
 * https://www.pgadmin.org/
+* https://enterprisecraftsmanship.com/posts/entity-vs-value-object-the-ultimate-list-of-differences/
+* https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects
+* 
