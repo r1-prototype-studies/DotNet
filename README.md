@@ -121,6 +121,9 @@ Hsoting a WebAPI project in a console application
   * Database Independence
   * External Agency Independence
 * CQRS &rarr; Command Query Responsibility Segregation
+* New learning of mapper method
+    ```
+    _mapper.Map(request, orderToUpdate, typeof(UpdateOrderCommand), typeof(Order));
 * 
 
 
