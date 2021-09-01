@@ -327,6 +327,7 @@ Hsoting a WebAPI project in a console application
         2.  Queries
     4.  Mappings
     5.  Models
+    6.  Exceptions
 43.  Create a new project Ordering.Infrastructure with the template class library c#.
 44.  Install the nuget package - AutoMapper
 45.  MediatR pipeline
