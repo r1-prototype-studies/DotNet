@@ -330,7 +330,8 @@ Hsoting a WebAPI project in a console application
      ```
      Caller > Request > mediatR > Pre Processor Behaviour > Handler > post Processor Behaviour
 46.  Install the nuget package - MediatR.Extensions.Microsoft.DependencyInjection
-47.  
+47.  Install the nuget package - Microsoft.Extensions.Logging.Abstractions
+48.  Install the nuget package - FluentValidation
 
 
 
@@ -344,6 +345,8 @@ Hsoting a WebAPI project in a console application
 6. AutoMapper.Extensions.Microsoft.DependencyInjection
 7. Automapper
 8. MediatR.Extensions.Microsoft.DependencyInjection
+9. Microsoft.Extensions.Logging.Abstractions
+10. FluentValidation
 
 ## Docker images
 1. mongo
