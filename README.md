@@ -304,7 +304,17 @@ Hsoting a WebAPI project in a console application
     ``` powerShell
      docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d --build
      ```
-39. 
+39. Create a new project Ordering.API with the template ASP.NET Core Web API.
+40. Change the running port and url
+   * Right-click on the project and go to properties.
+   * Go to Debug tab.
+   * Select Catalog.API from the profile.
+   * Check the app url at the bottom.
+   * The new profile gets added in the launchsettings.json in properties folder.
+41. Create a new project Ordering.Domain with the template class library c#.
+42. Create a new project Ordering.Application with the template class library c#.
+43. Create a new project Ordering.Infrastructure with the template class library c#.
+
 
 
 
