@@ -102,6 +102,25 @@ Hsoting a WebAPI project in a console application
   * credentials: admin@admin.com/password
 * gRPC &rarr; Google Remote Procedure Call
 * gRPc uses HTTP/2 protocol and it is non-browser at the moment.
+* DDD has the below layers
+  * Domain Model Layer
+    * Ideally, it must **NOT** take dependency on any other layer
+    * it Implements
+      * Domain Entities
+      * Repository Interfaces
+  * Application Layer
+    * Depends on Domain Layer for Domain entities and repository interfaces
+    * Depends on Infrastructure layer thru DI
+  * Infrastructure Layer
+    * Depends on Domain Layer for domain entities
+    * Direct dependency on infrastructure frameworks like EF core or any other database, cache or infrastructure API
+* Qualities for Clean Architecture
+  * Framework independence
+  * Testability
+  * UI Independence
+  * Database Independence
+  * External Agency Independence
+* CQRS &rarr; Command Query Responsibility Segregation
 * 
 
 
