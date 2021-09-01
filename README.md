@@ -312,8 +312,25 @@ Hsoting a WebAPI project in a console application
    * Check the app url at the bottom.
    * The new profile gets added in the launchsettings.json in properties folder.
 41. Create a new project Ordering.Domain with the template class library c#.
+    1.  Common --> EntityBase, ValueObject
+    2.  Entities
 42. Create a new project Ordering.Application with the template class library c#.
-43. Create a new project Ordering.Infrastructure with the template class library c#.
+    1.  Behaviour
+    2.  Contracts
+        1.  Persistence - IAsyncRepository and other Repository interfaces
+        2.  Infrastructe - Other third party integration interfaces
+    3.  Features - Each feature folder will have
+        1.  Commands
+        2.  Queries
+    4.  Mappings
+    5.  Models
+43.  Create a new project Ordering.Infrastructure with the template class library c#.
+44.  Install the nuget package - AutoMapper
+45.  MediatR pipeline
+     ```
+     Caller > Request > mediatR > Pre Processor Behaviour > Handler > post Processor Behaviour
+46.  Install the nuget package - MediatR.Extensions.Microsoft.DependencyInjection
+47.  
 
 
 
@@ -325,6 +342,8 @@ Hsoting a WebAPI project in a console application
 4. Dapper
 5. Npgsql
 6. AutoMapper.Extensions.Microsoft.DependencyInjection
+7. Automapper
+8. MediatR.Extensions.Microsoft.DependencyInjection
 
 ## Docker images
 1. mongo
