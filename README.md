@@ -13,6 +13,7 @@
     - [References](#references-1)
 - [Microservices - Shopping Cart](#microservices---shopping-cart)
   - [Notes](#notes-1)
+  - [Steps](#steps)
   - [Nuget packages](#nuget-packages)
   - [Docker images](#docker-images)
   - [References](#references-2)
@@ -126,10 +127,8 @@ Hsoting a WebAPI project in a console application
 * Configure to a particular config section
   ```csharp
   services.Configure<EmailSettings>(c => configuration.GetSection("EmailSettings"));
-* 
-
-
-
+  ```
+* GetService() returns null if a service does not exist, GetRequiredService() throws an exception instead. If you're using a third-party container, use GetRequiredService where possible - in the event of an exception, the third party container may be able to provide diagnostics so you can work out why an expected service wasn't registered.
 
 ## Steps
 1. Download the code from https://github.com/aspnetrun/run-aspnetcore-microservices
@@ -342,6 +341,11 @@ Hsoting a WebAPI project in a console application
 50.  Install the nuget package - FluentValidation.DependencyInjectionExtensions
 51.  Install the nuget package - Microsoft.EntityFrameworkCore.SqlServer
 52.  Install the nuget package - SendGrid
+53.  Install the nuget package - Microsoft.EntityFrameworkCore.Tools
+54.  Run the below command in ordering infrastructure project
+      ```
+      Add-Migration InitialCreate
+55. 
 
 
 
@@ -361,6 +365,7 @@ Hsoting a WebAPI project in a console application
 12. FluentValidation.DependencyInjectionExtensions
 13. Microsoft.EntityFrameworkCore.SqlServer
 14. SendGrid
+15. Microsoft.EntityFrameworkCore.Tools
 
 ## Docker images
 1. mongo
@@ -380,4 +385,4 @@ Hsoting a WebAPI project in a console application
 * https://enterprisecraftsmanship.com/posts/entity-vs-value-object-the-ultimate-list-of-differences/
 * https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects
 * https://sendgrid.com/
-* 
+* https://andrewlock.net/the-difference-between-getservice-and-getrquiredservice-in-asp-net-core/
