@@ -129,6 +129,31 @@ Hsoting a WebAPI project in a console application
   services.Configure<EmailSettings>(c => configuration.GetSection("EmailSettings"));
   ```
 * GetService() returns null if a service does not exist, GetRequiredService() throws an exception instead. If you're using a third-party container, use GetRequiredService where possible - in the event of an exception, the third party container may be able to provide diagnostics so you can work out why an expected service wasn't registered.
+* Microservices Communication Types
+  * Request driven architecture
+    * services communicate using http/rpc
+    * Clear control of flow. Easy to understand the sequence of actions.
+    * Drawback is if one of the dependant service is down, there is a high chance to exclude that call.
+  * Event driven architecture
+    * Services do not call each other. Communication happens over message broker.
+    * Consumers and providers does not know each other. So they can be maintained and deployed independently.
+    * Someone should understand without looking thru the code.
+  * Hybrid architecture
+* Properties of a queue
+  * Name
+  * Durable
+  * Exclusive
+  * AutoDelete
+* Exchange Types
+  * Direct Exchanges
+    * Messages are sent to one queue
+  * Topic Exchanges
+    * Messages are sent to multiple queues
+    * variation of publish / subscribe pattern
+  * Fanout Exchanges
+    * Messages sent to more than one queue
+    * For broadcasting
+  * Header Exchanges
 
 ## Steps
 1. Download the code from https://github.com/aspnetrun/run-aspnetcore-microservices
@@ -345,7 +370,8 @@ Hsoting a WebAPI project in a console application
 54.  Run the below command in ordering infrastructure project
       ```
       Add-Migration InitialCreate
-55. 
+55. Create a new class project - EventBus.Messages
+56. 
 
 
 
@@ -375,6 +401,7 @@ Hsoting a WebAPI project in a console application
 5. postgres
 6. dpage/pgadmin4
 7. mcr.microsoft.com/mssql/server:2017-latest
+8. rabbitmq:3-management-alpine
 
 ## References
 * https://github.com/aspnetrun
