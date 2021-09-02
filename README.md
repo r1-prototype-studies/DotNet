@@ -371,7 +371,10 @@ Hsoting a WebAPI project in a console application
       ```
       Add-Migration InitialCreate
 55. Create a new class project - EventBus.Messages
-56. 
+56. Install the below nuget packages in Basket.API project
+    1.  MassTransit
+    2.  MassTransit.RabbitMQ
+    3.  MassTransit.AspNetCore
 
 
 
@@ -392,6 +395,9 @@ Hsoting a WebAPI project in a console application
 13. Microsoft.EntityFrameworkCore.SqlServer
 14. SendGrid
 15. Microsoft.EntityFrameworkCore.Tools
+16. MassTransit
+17. MassTransit.RabbitMQ
+18. MassTransit.AspNetCore
 
 ## Docker images
 1. mongo
