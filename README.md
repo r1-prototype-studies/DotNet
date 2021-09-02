@@ -338,6 +338,8 @@ Hsoting a WebAPI project in a console application
 48.  Install the nuget package - FluentValidation
 49.  Install the nuget package - AutoMapper.Extensions.Microsoft.DependencyInjection
 50.  Install the nuget package - FluentValidation.DependencyInjectionExtensions
+51.  Install the nuget package - Microsoft.EntityFrameworkCore
+52.  Install the nuget package - SendGrid
 
 
 
@@ -355,6 +357,8 @@ Hsoting a WebAPI project in a console application
 10. FluentValidation
 11. AutoMapper.Extensions.Microsoft.DependencyInjection
 12. FluentValidation.DependencyInjectionExtensions
+13. Microsoft.EntityFrameworkCore
+14. SendGrid
 
 ## Docker images
 1. mongo
@@ -373,4 +377,5 @@ Hsoting a WebAPI project in a console application
 * https://www.pgadmin.org/
 * https://enterprisecraftsmanship.com/posts/entity-vs-value-object-the-ultimate-list-of-differences/
 * https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects
+* https://sendgrid.com/
 * 
