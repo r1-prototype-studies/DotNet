@@ -33,6 +33,7 @@ namespace Basket.API
             });
 
             services.AddScoped<IBasketRepository, BasketRepository>();
+            services.AddAutoMapper(typeof(Startup));
 
             services.AddStackExchangeRedisCache(options =>
             {
