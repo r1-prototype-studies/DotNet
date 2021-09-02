@@ -13,7 +13,6 @@
     - [References](#references-1)
 - [Microservices - Shopping Cart](#microservices---shopping-cart)
   - [Notes](#notes-1)
-  - [Steps](#steps)
   - [Nuget packages](#nuget-packages)
   - [Docker images](#docker-images)
   - [References](#references-2)
@@ -122,8 +121,11 @@ Hsoting a WebAPI project in a console application
   * External Agency Independence
 * CQRS &rarr; Command Query Responsibility Segregation
 * New learning of mapper method
-    ```
+    ```csharp
     _mapper.Map(request, orderToUpdate, typeof(UpdateOrderCommand), typeof(Order));
+* Configure to a particular config section
+  ```csharp
+  services.Configure<EmailSettings>(c => configuration.GetSection("EmailSettings"));
 * 
 
 
@@ -338,7 +340,7 @@ Hsoting a WebAPI project in a console application
 48.  Install the nuget package - FluentValidation
 49.  Install the nuget package - AutoMapper.Extensions.Microsoft.DependencyInjection
 50.  Install the nuget package - FluentValidation.DependencyInjectionExtensions
-51.  Install the nuget package - Microsoft.EntityFrameworkCore
+51.  Install the nuget package - Microsoft.EntityFrameworkCore.SqlServer
 52.  Install the nuget package - SendGrid
 
 
@@ -357,7 +359,7 @@ Hsoting a WebAPI project in a console application
 10. FluentValidation
 11. AutoMapper.Extensions.Microsoft.DependencyInjection
 12. FluentValidation.DependencyInjectionExtensions
-13. Microsoft.EntityFrameworkCore
+13. Microsoft.EntityFrameworkCore.SqlServer
 14. SendGrid
 
 ## Docker images
