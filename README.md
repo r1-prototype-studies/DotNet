@@ -374,6 +374,7 @@ Hsoting a WebAPI project in a console application
 4. portainer/portainer-ce
 5. postgres
 6. dpage/pgadmin4
+7. mcr.microsoft.com/mssql/server:2017-latest
 
 ## References
 * https://github.com/aspnetrun
