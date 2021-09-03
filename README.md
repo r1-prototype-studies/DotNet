@@ -154,6 +154,20 @@ Hsoting a WebAPI project in a console application
     * Messages sent to more than one queue
     * For broadcasting
   * Header Exchanges
+* Gateway Routing pattern (Ocelot)
+  * Routing / Reverse Proxy
+  * Data Aggregator / Request Aggregator
+  * Protocol Abstraction / Service Discovery with consul & Eureka
+  * Centralized Error Management / Logging and Tracing
+  * Load Balancing
+  * Correlation pass-through
+  * Quality of service 
+  * Authentication
+  * Authorization
+  * Throttling
+  * Headers / Query String Transformation
+  * Custom Middleware
+
 
 ## Steps
 1. Download the code from https://github.com/aspnetrun/run-aspnetcore-microservices
@@ -375,6 +389,8 @@ Hsoting a WebAPI project in a console application
     1.  MassTransit
     2.  MassTransit.RabbitMQ
     3.  MassTransit.AspNetCore
+57. Create a new ASP.Net core empty project - ApiGateways
+58. Install the nuget package - Ocelot
 
 
 
@@ -398,6 +414,7 @@ Hsoting a WebAPI project in a console application
 16. MassTransit
 17. MassTransit.RabbitMQ
 18. MassTransit.AspNetCore
+19. Ocelot
 
 ## Docker images
 1. mongo
@@ -420,3 +437,4 @@ Hsoting a WebAPI project in a console application
 * https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects
 * https://sendgrid.com/
 * https://andrewlock.net/the-difference-between-getservice-and-getrquiredservice-in-asp-net-core/
+* https://github.com/aspnetrun/run-aspnet-identityserver4
