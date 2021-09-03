@@ -371,7 +371,7 @@ Hsoting a WebAPI project in a console application
       ```
       Add-Migration InitialCreate
 55. Create a new class project - EventBus.Messages
-56. Install the below nuget packages in Basket.API project
+56. Install the below nuget packages in Basket.API and ordering.API projects
     1.  MassTransit
     2.  MassTransit.RabbitMQ
     3.  MassTransit.AspNetCore
