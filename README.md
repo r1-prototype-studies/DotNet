@@ -438,3 +438,4 @@ Hsoting a WebAPI project in a console application
 * https://sendgrid.com/
 * https://andrewlock.net/the-difference-between-getservice-and-getrquiredservice-in-asp-net-core/
 * https://github.com/aspnetrun/run-aspnet-identityserver4
+* https://ocelot.readthedocs.io/en/latest/introduction/gettingstarted.html
