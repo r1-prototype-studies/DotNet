@@ -391,6 +391,7 @@ Hsoting a WebAPI project in a console application
     3.  MassTransit.AspNetCore
 57. Create a new ASP.Net core empty project - ApiGateways
 58. Install the nuget package - Ocelot
+59. Install the nuget package - Ocelot.Cache.CacheManager
 
 
 
@@ -415,6 +416,7 @@ Hsoting a WebAPI project in a console application
 17. MassTransit.RabbitMQ
 18. MassTransit.AspNetCore
 19. Ocelot
+20. Ocelot.Cache.CacheManager
 
 ## Docker images
 1. mongo
