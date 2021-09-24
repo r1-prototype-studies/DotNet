@@ -167,6 +167,14 @@ Hsoting a WebAPI project in a console application
   * Throttling
   * Headers / Query String Transformation
   * Custom Middleware
+* Gateway Aggregation pattern
+  * Single Request
+  * Multiple calls to different backend systems
+  * Dispatches requests to the various backend systems
+  * Reduce chattiness between the client and the services
+* Chaining HTTP calls is an antipattern
+* 
+
 
 
 ## Steps
@@ -392,6 +400,7 @@ Hsoting a WebAPI project in a console application
 57. Create a new ASP.Net core empty project - ApiGateways
 58. Install the nuget package - Ocelot
 59. Install the nuget package - Ocelot.Cache.CacheManager
+60. Create a new project Shopping.Aggregator with the template ASP.NET Core Web API.
 
 
 
