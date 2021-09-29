@@ -450,3 +450,5 @@ Hsoting a WebAPI project in a console application
 * https://andrewlock.net/the-difference-between-getservice-and-getrquiredservice-in-asp-net-core/
 * https://github.com/aspnetrun/run-aspnet-identityserver4
 * https://ocelot.readthedocs.io/en/latest/introduction/gettingstarted.html
+* https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-5.0
+* https://docs.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests
